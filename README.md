@@ -6,7 +6,7 @@ The [Watson AlchemyAPI](http://www.alchemyapi.com/) News API offers sophisticate
 
 The goal of this tutorial is to demonstrate how to get started with an integration between Watson Explorer and the Watson AlchemyAPI service available on IBM Watson Developer Cloud. By the end of the tutorial you will have enhanced the example-appbuilder app with a news widget that provides links to recent news articles and blog updates relevant to individual entities, as well as a trend widget that provides a visualization of the frequency with which individual entities appear in the news.
 
-![Screen shot of the "AlchemyNews API news article" widget.](appbuilder/Watson-AchemyNews-widget.PNG)
+![Screen shot of the "AlchemyNews API news article" widget.](appbuilder/Watson-AchemyNews-Trend-widget.PNG)
 
 ## Prerequisites
 Please see the [Introduction](https://github.com/Watson-Explorer/wex-wdc-integration-samples) for an overview of the integration architecture, and the tools and libraries that need to be installed to create Java-based applications in Bluemix.
@@ -130,7 +130,6 @@ Once you have logged into the Application Builder administrative interface, foll
 7. Go back to the Book Title > detail page.
 8. Drag the `WDC_AlchemyAPI_News` widget to the top of the right column and save the page configuration.
 
-![Screen shot of "AlchemyAPI News" widget.](ApplicationBuilder/Watson-AchemyNews-widget.png)
 
 
 **NOTE:** At this point the widget should be fully configured.  **However, you may find far more relevant news results** for your data if you specify the entity type as part of the news query.  There exist other AlchemyAPI News API parameters that you may find useful for tuning your results.  See the AlchemyAPI documentation for [details about using entity types](http://docs.alchemyapi.com/v1.0/docs/entities) as well as [nearly 400 other parameters](http://docs.alchemyapi.com/v1.0/docs/full-list-of-supported-news-api-fields) that can be used to construct sophisticated News API queries.
@@ -142,7 +141,7 @@ In addition to building the right query, ensure that you are requesting the appr
 The purpose of this example widget is to display a graph of the number of news results.  This news visualization allows your end-users to quickly see whether an entity is trending in the news.
 
 Follow the steps outlined for the news widget above, but this time for the [trend widget](appbuilder/AlchemyNews-trend-widget.erb), with an appropriately different ID and display name.  Consider creating a flip widget that cycles between the news search results and the news trend graph.
-![Screen shot of Trend widget.](ApplicationBuilder/Watson-AchemyNews-Trend-widget.png)
+
 
 # Implementation Considerations
 
