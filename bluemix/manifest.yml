@@ -1,0 +1,11 @@
+---
+services:
+- wex-AlchemyAPI
+applications:
+- name: wex-AlchemyNews
+  disk_quota: 1024M
+  host: wex-alchemynews
+  path: target/wex-wdc-AlchemyNews-sample.war
+  domain: mybluemix.net
+  instances: 1
+  memory: 512M

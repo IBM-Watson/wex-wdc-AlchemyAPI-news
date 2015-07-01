@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Java Web Starter Application</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<table>
+		<tr>
+			<td style='width: 30%;'><img class = "newappIcon" src='images/newapp-icon.png'>
+			</td>
+			<td>
+					<form action="api/getnews" method="post">
+		Start time: <input type="text" name="start">
+		<br>
+		<br>
+		End time: <input type="text" name="end">
+		<br>
+		<br>
+		MaxResults: <input type="text" name="maxResults">
+		<br>
+		<br>
+		timeSlice: <input type="text" name="timeSlice">
+		<br>
+		<br>
+		Query: <input type="text" name="q">
+		<br>
+		<br>
+		returns: <input type="text" name="returns">
+		<br>
+		<br>
+		<input type="submit" value="Submit" />
+	</form>
+			</td>
+		</tr>
+	</table>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
